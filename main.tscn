@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://pr8xbce06a33"]
+
+[node name="Main" type="Node2D"]
+
+[node name="RoadSurface" type="ColorRect" parent="."]
+offset_top = 455.0
+offset_right = 900.0
+offset_bottom = 775.0
+color = Color(0.65834, 0.65834, 0.65834, 1)
+
+[node name="WaterSurface" type="ColorRect" parent="."]
+offset_top = 88.0
+offset_right = 900.0
+offset_bottom = 408.0
+color = Color(0.306319, 0.731775, 0.758865, 1)
