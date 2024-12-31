@@ -3,13 +3,12 @@
 [node name="Main" type="Node2D"]
 
 [node name="RoadSurface" type="ColorRect" parent="."]
-offset_top = 455.0
+offset_top = 514.0
 offset_right = 900.0
-offset_bottom = 775.0
-color = Color(0.65834, 0.65834, 0.65834, 1)
+offset_bottom = 1028.0
+color = Color(0.117109, 0.117109, 0.117109, 1)
 
 [node name="WaterSurface" type="ColorRect" parent="."]
-offset_top = 88.0
 offset_right = 900.0
-offset_bottom = 408.0
-color = Color(0.306319, 0.731775, 0.758865, 1)
+offset_bottom = 514.0
+color = Color(0.11122, 0.213434, 0.388531, 1)

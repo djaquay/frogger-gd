@@ -4,17 +4,14 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* connect repo to Github
+* hud (lives, score, timer bar)
 
 Bugs
 
-* bug 1
-* bug 2
+* bugs go here
 
 In the queue
 
-* main scene
-* hud (lives, score)
 * playfield graphics
 * player static graphics
 * player spawning/movement
@@ -42,7 +39,8 @@ In the queue
 
 ## Done
 
-* stuff I've done
+* connect repo to Github
+* main scene, simple backgrounds
 
 ## Notes
 
