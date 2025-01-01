@@ -4,7 +4,7 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* hud (lives, score, timer bar)
+* playfield graphics
 
 Bugs
 
@@ -12,7 +12,6 @@ Bugs
 
 In the queue
 
-* playfield graphics
 * player static graphics
 * player spawning/movement
 * scoring (timer-based?  I forget...)
@@ -41,6 +40,7 @@ In the queue
 
 * connect repo to Github
 * main scene, simple backgrounds
+* hud (lives, score, timer bar)
 
 ## Notes
 

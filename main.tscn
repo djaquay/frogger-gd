@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://pr8xbce06a33"]
+[gd_scene load_steps=2 format=3 uid="uid://pr8xbce06a33"]
+
+[ext_resource type="PackedScene" uid="uid://b7ymqa0p41pkr" path="res://hud.tscn" id="1_u82ig"]
 
 [node name="Main" type="Node2D"]
 
@@ -12,3 +14,5 @@ color = Color(0.117109, 0.117109, 0.117109, 1)
 offset_right = 900.0
 offset_bottom = 514.0
 color = Color(0.11122, 0.213434, 0.388531, 1)
+
+[node name="HUD" parent="." instance=ExtResource("1_u82ig")]
