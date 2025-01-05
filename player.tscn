@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvowpesu3wm24"]
+
+[ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="1_heeue"]
+
+[node name="Player" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(464, 930)
+scale = Vector2(4, 4)
+texture = ExtResource("1_heeue")
+hframes = 4
+vframes = 4
+frame = 8

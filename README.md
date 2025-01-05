@@ -4,16 +4,14 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* player static graphics
+* player spawning/movement
 
 Bugs
 
-* bugs go here
+* need hard interpolation of sprites
 
 In the queue
 
-* player spawning/movement
-* scoring (timer-based?  I forget...)
 * car static graphics
 * car spawning/movement
 	* slow cars in most lanes, fast car in some
@@ -33,7 +31,8 @@ In the queue
 * player jump animation
 * player death animation
 * level clear/reset
-* level timer?
+* scoring (timer-based?  I forget...)
+* level timer
 
 ## Done
 
@@ -41,6 +40,7 @@ In the queue
 * main scene, simple backgrounds
 * hud (lives, score, timer bar)
 * playfield graphics
+* player static graphics
 
 ## Notes
 
