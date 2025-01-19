@@ -4,15 +4,14 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* player spawning/movement
+* car static graphics
 
 Bugs
 
-* need hard interpolation of sprites
+* (code more bugs :)
 
 In the queue
 
-* car static graphics
 * car spawning/movement
 	* slow cars in most lanes, fast car in some
 * car collision, player death/reset
@@ -41,6 +40,7 @@ In the queue
 * hud (lives, score, timer bar)
 * playfield graphics
 * player static graphics
+* player spawning/movement
 
 ## Notes
 

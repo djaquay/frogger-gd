@@ -1,12 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bvowpesu3wm24"]
+[gd_scene load_steps=3 format=3 uid="uid://bvowpesu3wm24"]
 
+[ext_resource type="Script" path="res://player.gd" id="1_a3i5t"]
 [ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="1_heeue"]
 
 [node name="Player" type="Area2D"]
+script = ExtResource("1_a3i5t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(464, 930)
 scale = Vector2(4, 4)
 texture = ExtResource("1_heeue")
 hframes = 4
