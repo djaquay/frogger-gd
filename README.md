@@ -4,7 +4,8 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* car static graphics
+* car spawning/movement
+	* slow cars in most lanes, fast car in some
 
 Bugs
 
@@ -12,8 +13,6 @@ Bugs
 
 In the queue
 
-* car spawning/movement
-	* slow cars in most lanes, fast car in some
 * car collision, player death/reset
 * log graphics
 * log spawning/movement
@@ -41,6 +40,7 @@ In the queue
 * playfield graphics
 * player static graphics
 * player spawning/movement
+* car static graphics
 
 ## Notes
 

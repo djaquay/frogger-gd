@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw3setkjrxbdv"]
+
+[ext_resource type="Script" path="res://truck.gd" id="1_1ufnn"]
+[ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="2_kd7cj"]
+
+[node name="Truck" type="Area2D"]
+script = ExtResource("1_1ufnn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_kd7cj")
+hframes = 4
+vframes = 4
+frame = 13
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(64, 0)
+scale = Vector2(4, 4)
+texture = ExtResource("2_kd7cj")
+hframes = 4
+vframes = 4
+frame = 14
