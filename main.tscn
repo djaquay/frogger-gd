@@ -31,6 +31,7 @@ sources/0 = SubResource("TileSetAtlasSource_qn2rj")
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_vny36")
+car_scene = ExtResource("5_uf37k")
 
 [node name="RoadSurface" type="ColorRect" parent="."]
 offset_top = 514.0
@@ -55,10 +56,32 @@ tile_set = SubResource("TileSet_pugvb")
 visible = false
 
 [node name="Car" parent="." instance=ExtResource("5_uf37k")]
+visible = false
 position = Vector2(667, 864)
 
 [node name="Truck" parent="." instance=ExtResource("6_wgkcm")]
 position = Vector2(818, 605)
 
-[node name="StartPosition" type="Marker2D" parent="."]
+[node name="PCStartPosition" type="Marker2D" parent="."]
 position = Vector2(450, 927)
+
+[node name="StartLane1" type="Marker2D" parent="."]
+position = Vector2(949, 866)
+
+[node name="StartLane2" type="Marker2D" parent="."]
+position = Vector2(-50, 787)
+
+[node name="StartLane3" type="Marker2D" parent="."]
+position = Vector2(942, 755)
+
+[node name="StartLane4" type="Marker2D" parent="."]
+position = Vector2(-45, 694)
+
+[node name="StartLane5" type="Marker2D" parent="."]
+position = Vector2(942, 607)
+
+[node name="CarTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="CarTimer" to="." method="_on_car_timer_timeout"]
