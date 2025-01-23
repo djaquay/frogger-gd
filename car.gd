@@ -15,3 +15,6 @@ func _process(delta: float) -> void:
 func start(pos) -> void:
 	position = pos
 	show()
+
+func setFrame(fr) -> void:
+	$Sprite.frame = fr

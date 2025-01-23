@@ -3,7 +3,9 @@
 [ext_resource type="Script" path="res://truck.gd" id="1_1ufnn"]
 [ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="2_kd7cj"]
 
-[node name="Truck" type="Area2D"]
+[node name="Truck" type="RigidBody2D"]
+mass = 0.001
+gravity_scale = 0.0
 script = ExtResource("1_1ufnn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

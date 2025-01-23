@@ -6,6 +6,8 @@ Part of the 20-Game Challenge
 
 * car spawning/movement
 	* slow cars in most lanes, fast car in some
+	* set timers to playable values
+	* can Truck extend Car?
 
 Bugs
 
