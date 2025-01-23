@@ -68,19 +68,19 @@ position = Vector2(818, 605)
 position = Vector2(450, 927)
 
 [node name="StartLane1" type="Marker2D" parent="."]
-position = Vector2(949, 866)
+position = Vector2(949, 862)
 
 [node name="StartLane2" type="Marker2D" parent="."]
-position = Vector2(-50, 787)
+position = Vector2(-50, 798)
 
 [node name="StartLane3" type="Marker2D" parent="."]
-position = Vector2(942, 755)
+position = Vector2(942, 734)
 
 [node name="StartLane4" type="Marker2D" parent="."]
-position = Vector2(-45, 694)
+position = Vector2(-45, 670)
 
 [node name="StartLane5" type="Marker2D" parent="."]
-position = Vector2(942, 607)
+position = Vector2(942, 606)
 
 [node name="CarTimer1" type="Timer" parent="."]
 wait_time = 3.0
