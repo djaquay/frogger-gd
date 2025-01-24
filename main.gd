@@ -5,7 +5,7 @@ extends Node2D
 
 const gridSize = 64
 var laneStarts = []
-var vels = [-150.0, 150.0, -150.0, 150.0, -150.0]
+var vels = [-150.0, 150.0, -150.0, 350.0, -150.0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

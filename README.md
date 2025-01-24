@@ -4,18 +4,16 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* car spawning/movement
-	* slow cars in most lanes, fast car in some
-	* set timers to playable values
-	* can Truck extend Car?
+* car collision, player death/reset
 
 Bugs
 
-* (code more bugs :)
+* can Truck extend Car?
+* have some cars on-screen at start of level already
+* stagger spawn times
 
 In the queue
 
-* car collision, player death/reset
 * log graphics
 * log spawning/movement
 * fly graphics
@@ -43,6 +41,7 @@ In the queue
 * player static graphics
 * player spawning/movement
 * car static graphics
+* car spawning/movement
 
 ## Notes
 

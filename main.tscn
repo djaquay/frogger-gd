@@ -83,24 +83,24 @@ position = Vector2(-45, 670)
 position = Vector2(942, 606)
 
 [node name="CarTimer1" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.5
 autostart = true
 metadata/lane = 1
 
 [node name="CarTimer2" type="Timer" parent="."]
-wait_time = 1.062
+wait_time = 2.5
 autostart = true
 
 [node name="CarTimer3" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 2.5
 autostart = true
 
 [node name="CarTimer4" type="Timer" parent="."]
-wait_time = 2.25
+wait_time = 4.0
 autostart = true
 
 [node name="CarTimer5" type="Timer" parent="."]
-wait_time = 1.25
+wait_time = 2.5
 autostart = true
 
 [connection signal="timeout" from="CarTimer1" to="." method="_on_car_timer_timeout" binds= [1]]
