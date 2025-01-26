@@ -4,17 +4,17 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* car collision, player death/reset
+* log graphics
 
 Bugs
 
+* how to keep cars from spinning (lol)
 * can Truck extend Car?
 * have some cars on-screen at start of level already
 * stagger spawn times
 
 In the queue
 
-* log graphics
 * log spawning/movement
 * fly graphics
 * fly spawning
@@ -42,6 +42,7 @@ In the queue
 * player spawning/movement
 * car static graphics
 * car spawning/movement
+* car collision, player death/reset
 
 ## Notes
 

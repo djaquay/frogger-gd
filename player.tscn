@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvowpesu3wm24"]
+[gd_scene load_steps=4 format=3 uid="uid://bvowpesu3wm24"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_a3i5t"]
 [ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="1_heeue"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vb3i"]
+size = Vector2(65, 52)
 
 [node name="Player" type="Area2D"]
 script = ExtResource("1_a3i5t")
@@ -13,3 +16,9 @@ texture = ExtResource("1_heeue")
 hframes = 4
 vframes = 4
 frame = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_5vb3i")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

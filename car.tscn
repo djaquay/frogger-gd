@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://ut76drnsgag5"]
+[gd_scene load_steps=4 format=3 uid="uid://ut76drnsgag5"]
 
 [ext_resource type="Script" path="res://car.gd" id="1_jaja3"]
 [ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="2_reisu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8a1l1"]
+size = Vector2(68, 53)
 
 [node name="Car" type="RigidBody2D"]
 mass = 0.001
@@ -15,3 +18,7 @@ texture = ExtResource("2_reisu")
 hframes = 4
 vframes = 4
 frame = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_8a1l1")
