@@ -4,7 +4,7 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* log graphics
+* turtle spawning/movement
 
 Bugs
 
@@ -15,13 +15,13 @@ Bugs
 
 In the queue
 
+* log graphics
 * log spawning/movement
+* player movement on/with turtles, logs
+* player collision with edge of screen (on logs)
 * fly graphics
 * fly spawning
 * fly capture, scoring
-* player movement with logs
-* player movement *on* logs
-* player collision with edge of screen (on logs)
 * gator graphics
 * gator spawning/movement
 * water collision
@@ -43,6 +43,7 @@ In the queue
 * car static graphics
 * car spawning/movement
 * car collision, player death/reset
+* turtle graphics
 
 ## Notes
 

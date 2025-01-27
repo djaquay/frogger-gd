@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://pr8xbce06a33"]
+[gd_scene load_steps=10 format=4 uid="uid://pr8xbce06a33"]
 
 [ext_resource type="PackedScene" uid="uid://b7ymqa0p41pkr" path="res://hud.tscn" id="1_u82ig"]
 [ext_resource type="Script" path="res://main.gd" id="1_vny36"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bvowpesu3wm24" path="res://player.tscn" id="3_y3o8m"]
 [ext_resource type="PackedScene" uid="uid://ut76drnsgag5" path="res://car.tscn" id="5_uf37k"]
 [ext_resource type="PackedScene" uid="uid://cw3setkjrxbdv" path="res://truck.tscn" id="6_wgkcm"]
+[ext_resource type="PackedScene" uid="uid://c8yetj8gslky7" path="res://turtle.tscn" id="7_3ajmi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qn2rj"]
 resource_name = "frogger"
@@ -25,6 +26,7 @@ texture = ExtResource("2_1m2uw")
 0:3/0 = 0
 1:3/size_in_atlas = Vector2i(2, 1)
 1:3/0 = 0
+3:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_pugvb"]
 sources/0 = SubResource("TileSetAtlasSource_qn2rj")
@@ -63,6 +65,15 @@ position = Vector2(667, 864)
 [node name="Truck" parent="." instance=ExtResource("6_wgkcm")]
 visible = false
 position = Vector2(818, 605)
+
+[node name="Turtle" parent="." instance=ExtResource("7_3ajmi")]
+position = Vector2(651, 482)
+
+[node name="Turtle2" parent="." instance=ExtResource("7_3ajmi")]
+position = Vector2(712, 482)
+
+[node name="Turtle3" parent="." instance=ExtResource("7_3ajmi")]
+position = Vector2(774, 483)
 
 [node name="PCStartPosition" type="Marker2D" parent="."]
 position = Vector2(450, 927)

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8yetj8gslky7"]
+
+[ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="1_6bqg8"]
+
+[node name="Turtle" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_6bqg8")
+hframes = 4
+vframes = 4
+frame = 15

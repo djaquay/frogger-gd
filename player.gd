@@ -16,5 +16,5 @@ func start(pos) -> void:
 	show()
 
 func _on_body_entered(body: Node2D) -> void:
-	print("dead.")
+	# print("dead.")
 	position = startPos
