@@ -6,9 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yp3ex"]
 size = Vector2(93, 44)
 
-[node name="Truck" type="RigidBody2D"]
-mass = 0.001
-gravity_scale = 0.0
+[node name="Truck" type="Area2D"]
 script = ExtResource("1_1ufnn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends Area2D
 
 @export var const_vel: Vector2
 
@@ -9,8 +9,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	linear_velocity = const_vel
-
+	position += const_vel * delta
 
 func start(pos) -> void:
 	position = pos
