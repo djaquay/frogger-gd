@@ -2,10 +2,11 @@ extends Node2D
 
 @export var car_scene: PackedScene
 @export var truck_scene: PackedScene
+@export var turtle_scene: PackedScene
 
 const gridSize = 64
 var laneStarts = []
-var vels = [-150.0, 150.0, -150.0, 350.0, -150.0]
+var vels = [-150.0, 150.0, -150.0, 350.0, -150.0, -150.0, 0.0, 0.0, -150.0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,8 +16,13 @@ func _ready() -> void:
 	laneStarts.push_back($StartLane3)
 	laneStarts.push_back($StartLane4)
 	laneStarts.push_back($StartLane5)
+	laneStarts.push_back($StartLane6)
+	laneStarts.push_back($StartLane6)
+	laneStarts.push_back($StartLane6)
+	laneStarts.push_back($StartLane9)
 	
 	_on_car_timer_timeout(1)
+	_on_car_timer_timeout(6)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -31,7 +37,14 @@ func _process(delta: float) -> void:
 
 
 func _on_car_timer_timeout(lane) -> void:
-	var car = truck_scene.instantiate() if lane == 5 else car_scene.instantiate()
+	var car = null
+	if lane < 5:
+		car = car_scene.instantiate()
+	elif lane == 5:
+		car = truck_scene.instantiate()
+	elif lane == 6 or lane == 9:
+		car = turtle_scene.instantiate()
+	# var car = truck_scene.instantiate() if lane == 5 else car_scene.instantiate()
 	
 	var start = laneStarts[lane-1]
 	car.position = start.position

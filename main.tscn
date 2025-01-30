@@ -35,6 +35,7 @@ sources/0 = SubResource("TileSetAtlasSource_qn2rj")
 script = ExtResource("1_vny36")
 car_scene = ExtResource("5_uf37k")
 truck_scene = ExtResource("6_wgkcm")
+turtle_scene = ExtResource("7_3ajmi")
 
 [node name="RoadSurface" type="ColorRect" parent="."]
 offset_top = 514.0
@@ -66,26 +67,32 @@ position = Vector2(667, 864)
 visible = false
 position = Vector2(818, 605)
 
-[node name="Turtle" parent="." instance=ExtResource("7_3ajmi")]
+[node name="Turtles" parent="." instance=ExtResource("7_3ajmi")]
 visible = false
 
 [node name="PCStartPosition" type="Marker2D" parent="."]
 position = Vector2(450, 927)
 
 [node name="StartLane1" type="Marker2D" parent="."]
-position = Vector2(949, 862)
+position = Vector2(950, 862)
 
 [node name="StartLane2" type="Marker2D" parent="."]
 position = Vector2(-50, 798)
 
 [node name="StartLane3" type="Marker2D" parent="."]
-position = Vector2(942, 734)
+position = Vector2(950, 734)
 
 [node name="StartLane4" type="Marker2D" parent="."]
-position = Vector2(-45, 670)
+position = Vector2(-50, 670)
 
 [node name="StartLane5" type="Marker2D" parent="."]
-position = Vector2(942, 606)
+position = Vector2(950, 606)
+
+[node name="StartLane6" type="Marker2D" parent="."]
+position = Vector2(950, 478)
+
+[node name="StartLane9" type="Marker2D" parent="."]
+position = Vector2(950, 286)
 
 [node name="CarTimer1" type="Timer" parent="."]
 wait_time = 2.5

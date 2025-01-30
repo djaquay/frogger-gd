@@ -4,7 +4,7 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* turtle spawning/movement
+* log graphics
 
 Bugs
 
@@ -13,7 +13,6 @@ Bugs
 
 In the queue
 
-* log graphics
 * log spawning/movement
 * player movement on/with turtles, logs
 * player collision with edge of screen (on logs)
@@ -43,6 +42,7 @@ In the queue
 * car collision, player death/reset
 * turtle graphics
 * how to keep cars from spinning (lol not lol)
+* turtle spawning/movement
 
 ## Notes
 
