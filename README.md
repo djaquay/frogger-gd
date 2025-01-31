@@ -4,17 +4,16 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* log graphics
+* player movement on/with turtles, logs
 
 Bugs
 
 * have some cars on-screen at start of level already
 * stagger spawn times
+* remove objs when they go off-screen
 
 In the queue
 
-* log spawning/movement
-* player movement on/with turtles, logs
 * player collision with edge of screen (on logs)
 * fly graphics
 * fly spawning
@@ -43,6 +42,8 @@ In the queue
 * turtle graphics
 * how to keep cars from spinning (lol not lol)
 * turtle spawning/movement
+* log graphics
+* log spawning/movement
 
 ## Notes
 

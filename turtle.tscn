@@ -14,7 +14,7 @@ texture_filter = 1
 scale = Vector2(4, 4)
 texture = ExtResource("1_6bqg8")
 hframes = 4
-vframes = 4
+vframes = 8
 frame = 15
 
 [node name="Turtle2" type="Sprite2D" parent="."]
@@ -23,7 +23,7 @@ position = Vector2(64, 0)
 scale = Vector2(4, 4)
 texture = ExtResource("1_6bqg8")
 hframes = 4
-vframes = 4
+vframes = 8
 frame = 15
 
 [node name="Turtle3" type="Sprite2D" parent="."]
@@ -32,7 +32,7 @@ position = Vector2(128, 0)
 scale = Vector2(4, 4)
 texture = ExtResource("1_6bqg8")
 hframes = 4
-vframes = 4
+vframes = 8
 frame = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
