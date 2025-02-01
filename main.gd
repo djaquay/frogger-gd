@@ -7,7 +7,7 @@ extends Node2D
 
 const gridSize = 64
 var laneStarts = []
-var vels = [-150.0, 150.0, -150.0, 350.0, -150.0, -150.0, -50.0, 0.0, -150.0]
+var vels = [-150.0, 150.0, -150.0, 350.0, -150.0, -150.0, -50.0, 0.0, -150.0, 0.0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -29,15 +29,32 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("move_down"):
-		$Player.position.y += gridSize
+		moveY("move_down")
 	if Input.is_action_just_pressed("move_up"):
-		$Player.position.y -= gridSize
+		moveY("move_up")
 	if Input.is_action_just_pressed("move_right"):
 		$Player.position.x += gridSize
 	if Input.is_action_just_pressed("move_left"):
 		$Player.position.x -= gridSize
+		
+		
+func moveY(action) -> void:
+	if Input.is_action_just_pressed("move_down"):
+		$Player.position.y += gridSize
+	if Input.is_action_just_pressed("move_up"):
+		$Player.position.y -= gridSize
 
-
+	var pcLane = ($PCStartPosition.position.y - $Player.position.y) / 64
+	if pcLane >= 12:
+		# probably do home zone checks and logic here
+		$Player.setHorzVel(0.0)
+	elif pcLane > 6:
+		$Player.setHorzVel(vels[pcLane - 2])
+	else:
+		$Player.setHorzVel(0.0)
+	print(pcLane)
+	
+	
 func _on_car_timer_timeout(lane) -> void:
 	var car = null
 	if lane < 5:
