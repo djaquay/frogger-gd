@@ -8,9 +8,8 @@ Part of the 20-Game Challenge
 
 Bugs
 
-* have some cars on-screen at start of level already
 * stagger spawn times
-* remove objs when they go off-screen
+* have some cars on-screen at start of level already
 
 In the queue
 
@@ -44,6 +43,7 @@ In the queue
 * turtle spawning/movement
 * log graphics
 * log spawning/movement
+* remove objs when they go off-screen
 
 ## Notes
 
