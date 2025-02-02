@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://c05w07kr8u1uw"]
 
-[ext_resource type="Script" path="res://turtle.gd" id="1_1q4ds"]
+[ext_resource type="Script" path="res://logs.gd" id="1_a4xtj"]
 [ext_resource type="Texture2D" uid="uid://dibnjipvbyrh1" path="res://Frogger.png" id="2_yehu7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cr718"]
 size = Vector2(187, 49)
 
 [node name="Logs" type="Area2D"]
-script = ExtResource("1_1q4ds")
+script = ExtResource("1_a4xtj")
 
 [node name="LogLeft" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -40,5 +40,7 @@ position = Vector2(65.5, 1.5)
 shape = SubResource("RectangleShape2D_cr718")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(66, 1.5)
+scale = Vector2(9.4, 2.55)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

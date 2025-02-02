@@ -7,11 +7,13 @@ extends Node2D
 
 const gridSize = 64
 var laneStarts = []
-var vels = [-150.0, 150.0, -150.0, 350.0, -150.0, -150.0, -50.0, 0.0, -150.0, 0.0]
+var vels = [-150.0, 150.0, -150.0, 350.0, -150.0, -100.0, -50.0, -75.0, -150.0, 0.0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Player.start($PCStartPosition.position)
+	var pos = $PCStartPosition.position
+	pos.y -= 64*6  # test code to get straight to the river
+	$Player.start(pos)
 	laneStarts.push_back($StartLane1)
 	laneStarts.push_back($StartLane2)
 	laneStarts.push_back($StartLane3)
@@ -19,7 +21,7 @@ func _ready() -> void:
 	laneStarts.push_back($StartLane5)
 	laneStarts.push_back($StartLane6)
 	laneStarts.push_back($StartLane7)
-	laneStarts.push_back($StartLane6)
+	laneStarts.push_back($StartLane8)
 	laneStarts.push_back($StartLane9)
 	
 	_on_car_timer_timeout(1)
@@ -47,12 +49,12 @@ func moveY(action) -> void:
 	var pcLane = ($PCStartPosition.position.y - $Player.position.y) / 64
 	if pcLane >= 12:
 		# probably do home zone checks and logic here
-		$Player.setHorzVel(0.0)
+		$Player.setHorzVel(0.0, pcLane)
 	elif pcLane > 6:
-		$Player.setHorzVel(vels[pcLane - 2])
+		$Player.setHorzVel(vels[pcLane - 2], pcLane)
 	else:
-		$Player.setHorzVel(0.0)
-	print(pcLane)
+		$Player.setHorzVel(0.0, pcLane)
+	print("moveY: ", pcLane)
 	
 	
 func _on_car_timer_timeout(lane) -> void:

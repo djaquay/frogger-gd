@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://pr8xbce06a33"]
+[gd_scene load_steps=11 format=4 uid="uid://pr8xbce06a33"]
 
 [ext_resource type="PackedScene" uid="uid://b7ymqa0p41pkr" path="res://hud.tscn" id="1_u82ig"]
 [ext_resource type="Script" path="res://main.gd" id="1_vny36"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://ut76drnsgag5" path="res://car.tscn" id="5_uf37k"]
 [ext_resource type="PackedScene" uid="uid://cw3setkjrxbdv" path="res://truck.tscn" id="6_wgkcm"]
 [ext_resource type="PackedScene" uid="uid://c8yetj8gslky7" path="res://turtle.tscn" id="7_3ajmi"]
-[ext_resource type="Script" path="res://logs.gd" id="8_1eqe2"]
 [ext_resource type="PackedScene" uid="uid://c05w07kr8u1uw" path="res://logs.tscn" id="8_6fj8g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qn2rj"]
@@ -62,9 +61,6 @@ scale = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAABAAEAAAACAAAAAAADAAEAAAABAAAAAAACAAEAAAADAAAAAAAAAAIAAAABAAEAAAABAAIAAAACAAEAAAACAAIAAAAAAAEAAAAAAAEAAAABAAAAAAADAAIAAAABAAEAAAAEAAIAAAACAAEAAAAGAAIAAAABAAEAAAAHAAIAAAACAAEAAAAJAAIAAAABAAEAAAAKAAIAAAACAAEAAAAMAAIAAAABAAEAAAANAAIAAAACAAEAAAAEAAEAAAACAAAAAAAGAAEAAAABAAAAAAAHAAEAAAACAAAAAAAJAAEAAAABAAAAAAAKAAEAAAACAAAAAAAMAAEAAAABAAAAAAANAAEAAAACAAAAAAAFAAIAAAAAAAEAAAAIAAIAAAAAAAEAAAALAAIAAAAAAAEAAAAFAAEAAAADAAAAAAAIAAEAAAADAAAAAAALAAEAAAADAAAAAAAAAAgAAAADAAEAAAABAAgAAAADAAEAAAACAAgAAAADAAEAAAADAAgAAAADAAEAAAAEAAgAAAADAAEAAAAFAAgAAAADAAEAAAAGAAgAAAADAAEAAAAHAAgAAAADAAEAAAAIAAgAAAADAAEAAAAJAAgAAAADAAEAAAAKAAgAAAADAAEAAAALAAgAAAADAAEAAAAMAAgAAAADAAEAAAANAAgAAAADAAEAAAAAAA4AAAADAAEAAAABAA4AAAADAAEAAAACAA4AAAADAAEAAAADAA4AAAADAAEAAAAEAA4AAAADAAEAAAAFAA4AAAADAAEAAAAGAA4AAAADAAEAAAAHAA4AAAADAAEAAAAIAA4AAAADAAEAAAAJAA4AAAADAAEAAAAKAA4AAAADAAEAAAALAA4AAAADAAEAAAAMAA4AAAADAAEAAAANAA4AAAADAAEAAAA=")
 tile_set = SubResource("TileSet_pugvb")
 
-[node name="Player" parent="." instance=ExtResource("3_y3o8m")]
-visible = false
-
 [node name="Car" parent="." instance=ExtResource("5_uf37k")]
 visible = false
 position = Vector2(667, 864)
@@ -78,7 +74,9 @@ visible = false
 
 [node name="Logs" parent="." instance=ExtResource("8_6fj8g")]
 visible = false
-script = ExtResource("8_1eqe2")
+
+[node name="Player" parent="." instance=ExtResource("3_y3o8m")]
+visible = false
 
 [node name="PCStartPosition" type="Marker2D" parent="."]
 position = Vector2(450, 927)
@@ -104,6 +102,9 @@ position = Vector2(950, 478)
 [node name="StartLane7" type="Marker2D" parent="."]
 position = Vector2(950, 414)
 
+[node name="StartLane8" type="Marker2D" parent="."]
+position = Vector2(950, 350)
+
 [node name="StartLane9" type="Marker2D" parent="."]
 position = Vector2(950, 286)
 
@@ -128,8 +129,28 @@ autostart = true
 wait_time = 2.5
 autostart = true
 
+[node name="CarTimer6" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="CarTimer7" type="Timer" parent="."]
+wait_time = 3.5
+autostart = true
+
+[node name="CarTimer8" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="CarTimer9" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
 [connection signal="timeout" from="CarTimer1" to="." method="_on_car_timer_timeout" binds= [1]]
 [connection signal="timeout" from="CarTimer2" to="." method="_on_car_timer_timeout" binds= [2]]
 [connection signal="timeout" from="CarTimer3" to="." method="_on_car_timer_timeout" binds= [3]]
 [connection signal="timeout" from="CarTimer4" to="." method="_on_car_timer_timeout" binds= [4]]
 [connection signal="timeout" from="CarTimer5" to="." method="_on_car_timer_timeout" binds= [5]]
+[connection signal="timeout" from="CarTimer6" to="." method="_on_car_timer_timeout" binds= [6]]
+[connection signal="timeout" from="CarTimer7" to="." method="_on_car_timer_timeout" binds= [7]]
+[connection signal="timeout" from="CarTimer8" to="." method="_on_car_timer_timeout" binds= [8]]
+[connection signal="timeout" from="CarTimer9" to="." method="_on_car_timer_timeout" binds= [9]]

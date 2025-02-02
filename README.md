@@ -4,7 +4,7 @@ Part of the 20-Game Challenge
 
 ## Up Next/The Plan
 
-* player movement on/with turtles, logs
+* player collision with edge of screen (on logs, and on road as well)
 
 Bugs
 
@@ -13,13 +13,11 @@ Bugs
 
 In the queue
 
-* player collision with edge of screen (on logs)
 * fly graphics
 * fly spawning
 * fly capture, scoring
 * gator graphics
 * gator spawning/movement
-* water collision
 * win slot detection
 * player jump animation
 * player death animation
@@ -44,6 +42,8 @@ In the queue
 * log graphics
 * log spawning/movement
 * remove objs when they go off-screen
+* player movement on/with turtles, logs
+* water collision
 
 ## Notes
 
